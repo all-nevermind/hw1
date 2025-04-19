@@ -24,6 +24,6 @@ public class Main {
         System.out.println("Task 2.");
         int income = 10;
         int spending = 2;
-        System.out.println("income: " + income + " usd.\nExpenditure: " + spending + " usd.\nThere is " + (income - spending) + " ruble left on the account.");
+        System.out.println("Income: " + income + " usd.\nExpenditure: " + spending + " usd.\nThere is " + (income - spending) + " ruble left on the account.");
     }
 }
