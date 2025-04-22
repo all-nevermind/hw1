@@ -1,12 +1,13 @@
 package ru.sklyarenko.netology.homework.lesson1;
 
-import ru.sklyarenko.netology.homework.HomeWork;
+/**
+ * Введение в программирование на Java.
+ * ДЗ от 17 апреля 2025 г.
+ */
+public class Introduction {
 
-public class Introduction implements HomeWork {
-
-    @Override
-    public String launch() {
-        return task1() + "\n" + task2();
+    public static void printSolution() {
+        System.out.println("Lesson 1. Introduction to Java Programming.\n" + task1() + "\n" + task2() + "\n");;
     }
     /**
      * Напишите программу, которая при запуске выводит ваше имя и фамилию на латинице.
@@ -24,6 +25,6 @@ public class Introduction implements HomeWork {
     private static String task2() {
         int income = 10;
         int spending = 2;
-        return "Task 2. Print solution:\nIncome: " + income + " usd.\nExpenditure: " + spending + " usd.\\nThere is " + (income - spending) + " ruble left on the account.";
+        return "Task 2. Print solution:\nIncome: " + income + " usd.\nExpenditure: " + spending + " usd.\nThere is " + (income - spending) + " ruble left on the account.";
     }
 }
