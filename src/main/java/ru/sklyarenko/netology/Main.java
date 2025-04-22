@@ -1,7 +1,6 @@
 package ru.sklyarenko.netology;
 
 import ru.sklyarenko.netology.homework.lesson1.Introduction;
-import ru.sklyarenko.netology.homework.lesson2.Structure;
 
 public class Main {
 
@@ -11,7 +10,6 @@ public class Main {
      */
     public static void main(String[] args) {
         Introduction.printSolution(); // Homework for block № 1: Introduction to Java Programming
-        Structure.printSolution(); // Homework for block № 2: Program structure
     }
 
 
