@@ -10,7 +10,7 @@ public class Main {
      * При проверке конкретного ДЗ, вызов прочих можно просто закоментить и оно не будет запускаться и мешаться.
      */
     public static void main(String[] args) {
-        Introduction.printSolution(); // Homework for block № 1: Introduction to Java Programming
+//        Introduction.printSolution(); // Homework for block № 1: Introduction to Java Programming
         Structure.printSolution(); // Homework for block № 2: Program structure
     }
 
