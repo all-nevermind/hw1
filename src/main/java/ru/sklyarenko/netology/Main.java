@@ -1,15 +1,17 @@
 package ru.sklyarenko.netology;
 
 import ru.sklyarenko.netology.homework.lesson1.Introduction;
+import ru.sklyarenko.netology.homework.lesson2.Structure;
 
 public class Main {
 
     /**
-     * Для запуска интересующего ДЗ расскоментировать нужную строку, всё подписано в доках и коментариях.
+     * ДЗ по всему курсу Основы Java. Запуск всех ДЗ последователен, подписан в доках и коментариях.
+     * При проверке конкретного ДЗ, вызов прочих можно просто закоментить и оно не будет запускаться и мешаться.
      */
     public static void main(String[] args) {
-//        Introduction.printSolution(); // Homework for block № 1: Introduction to Java Programming
-
+        Introduction.printSolution(); // Homework for block № 1: Introduction to Java Programming
+        Structure.printSolution(); // Homework for block № 2: Program structure
     }
 
 

@@ -6,6 +6,9 @@ package ru.sklyarenko.netology.homework.lesson1;
  */
 public class Introduction {
 
+    /**
+     * Вывод в лог решения к ДЗ.
+     */
     public static void printSolution() {
         System.out.println("Lesson 1. Introduction to Java Programming.\n" + task1() + "\n" + task2() + "\n");;
     }
