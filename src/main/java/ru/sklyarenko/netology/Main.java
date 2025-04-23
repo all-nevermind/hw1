@@ -12,6 +12,10 @@ public class Main {
     public static void main(String[] args) {
         Introduction.printSolution(); // Homework for block № 1: Introduction to Java Programming
         Structure.printSolution(); // Homework for block № 2: Program structure
+        //Homework for block № 3: Conditional operators and loops
+        //Homework for block № 4: Data types in Java: primitives
+        //Homework for block № 5: Data types in Java: objects
+        //Homework for block № 6: Class structure
     }
 
 
