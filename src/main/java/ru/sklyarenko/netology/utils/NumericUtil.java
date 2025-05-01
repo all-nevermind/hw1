@@ -16,5 +16,14 @@ public class NumericUtil {
         }
     }
 
+    public static long parseLong(String input) throws ApplicationException {
+        try {
+            return Long.parseLong(input);
+        } catch (NumberFormatException e) {
+            logger.warning("Value '" + input + "' it is not an long.");
+            throw new ApplicationException(FaultCode.PARSE_ERROR);
+        }
+    }
+
     private static final Logger logger = Logger.getLogger(NumericUtil.class.getName());
 }
