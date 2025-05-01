@@ -1,10 +1,8 @@
 package ru.sklyarenko.netology.utils;
 
 
-;
 import ru.sklyarenko.netology.exceptions.ApplicationException;
 import ru.sklyarenko.netology.exceptions.FaultCode;
-
 import java.util.logging.Logger;
 
 public class NumericUtil {

@@ -1,7 +1,5 @@
 package ru.sklyarenko.netology;
 
-import ru.sklyarenko.netology.homework.lesson1.Introduction;
-import ru.sklyarenko.netology.homework.lesson2.Structure;
 import ru.sklyarenko.netology.homework.lesson3.Loops;
 
 public class Main {

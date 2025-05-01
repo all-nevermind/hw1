@@ -7,6 +7,7 @@ import ru.sklyarenko.netology.exceptions.FaultCode;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.logging.Logger;
 
 public class ReaderUtil {
     public static int readInt(BufferedReader reader, String message) throws ApplicationException, IOException {
@@ -27,8 +28,8 @@ public class ReaderUtil {
             if (value.trim().equalsIgnoreCase(variant))
                 return value;
         }
-        System.out.println("The entered value = '" + value + "' does not match the expected values:" + Arrays.toString(variants));
+        logger.warning("The entered value = '" + value + "' does not match the expected values:" + Arrays.toString(variants));
         return readWithEnum(reader, message, variants);
     }
-
+    private static final Logger logger = Logger.getLogger(ReaderUtil.class.getName());
 }
