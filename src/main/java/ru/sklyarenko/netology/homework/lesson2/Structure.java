@@ -1,7 +1,8 @@
 package ru.sklyarenko.netology.homework.lesson2;
 
+import ru.sklyarenko.netology.utils.ReaderUtil;
+
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
@@ -37,31 +38,12 @@ public class Structure {
         System.out.println("Task 1. Print solution:");
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             System.out.println("Здравствуйте!");
-            int price = read(reader, "Введите цену товара (в руб.): ");
-            int weight = read(reader, "Введите вес товара (в кг.): ");
+            int price = ReaderUtil.readInt(reader, "Введите цену товара (в руб.): ");
+            int weight = ReaderUtil.readInt(reader, "Введите вес товара (в кг.): ");
 
             System.out.print("Размер пошлины (в руб.) составит: " + Duty.get(price, weight).intValue() + " руб.");
         } catch (Exception e) {
             throw new RuntimeException(e);
-        }
-    }
-
-
-    private static int read(BufferedReader reader, String message) throws IOException {
-        System.out.print(message);
-        try {
-            return parse(reader.readLine());
-        } catch (ClassCastException e) {
-            return read(reader, message);
-        }
-    }
-
-    private static int parse(String input) {
-        try {
-            return Integer.parseInt(input);
-        } catch (NumberFormatException e) {
-            System.out.println("Cannot parse value \"" + input + "\" to Integer.");
-            throw new ClassCastException();
         }
     }
 
